@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Power Garage | Standalone ECU & Custom Wiring & Performance Tuning</title>
+    <!-- Tailwind CSS CDN pro okamžitý start bez instalace -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        garageCyan: '#0d9488', /* Tlumená, technologická tyrkysová (Teal-600) */
+                        garageCyanHover: '#115e59', /* Tmavší odstín pro hover efekty (Teal-800) */
+                        darkBg: '#0a0a0a',
+                        cardBg: '#141414'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-gray-100 font-sans selection:bg-garageCyan selection:text-white">
+
+    <!-- HERO SEKCE -->
+    <section class="relative min-h-screen flex flex-col justify-between p-6 md:p-12 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-zinc-900 via-darkBg to-darkBg">
+        <!-- Pevný, čistý Header -->
+        <header class="flex justify-between items-center w-full max-w-7xl mx-auto">
+            <div class="text-xl font-black tracking-widest text-white">
+                RUSTIC <span class="text-garageCyan">POWER</span> GARAGE
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-medium text-gray-400">
+                <a href="#manifest" class="hover:text-white transition">Filozofie</a>
+                <a href="#projekty" class="hover:text-white transition">Projekty</a>
+                <a href="#sluzby" class="hover:text-white transition">Co ladíme</a>
+                <a href="#kontakt" class="hover:text-garageCyan transition text-white">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Hlavní sdělení -->
+        <div class="w-full max-w-7xl mx-auto my-auto py-12">
+            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tighter text-white max-w-4xl leading-none mb-6">
+                DÁVÁME STARÉ HMOTĚ <br class="hidden md:inline">NOVÉ SRDCE.
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl font-light leading-relaxed mb-8">
+                Stavba custom kabelových svazků, odstraňování chaosu v elektroinstalaci a pokročilé ladění standalone řídicích jednotek.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#kontakt" class="inline-block text-center bg-garageCyan text-white font-semibold px-8 py-4 rounded-none hover:bg-garageCyanHover transition uppercase tracking-wider text-sm">
+                    Konzultovat projekt
+                </a>
+                <a href="https://www.instagram.com/rusticpower/" target="_blank" class="inline-block text-center border border-zinc-700 text-gray-300 font-semibold px-8 py-4 rounded-none hover:border-white hover:text-white transition uppercase tracking-wider text-sm">
+                    Sledovat IG @rusticpower
+                </a>
+            </div>
+        </div>
+
+        <!-- Spodní lišta s ikonickými auty -->
+        <div class="w-full max-w-7xl mx-auto border-t border-zinc-800/60 pt-6 flex flex-wrap justify-between items-center gap-4 text-xs tracking-widest text-zinc-500 uppercase">
+            <div>Aktuální platformy: EVO III / Silvia S14 / RX-7</div>
+            <div> &copy; 2026</div>
+        </div>
+    </section>
+
+    <!-- SEKCE: MANIFEST / FILOZOFIE -->
+    <section id="manifest" class="py-24 px-6 max-w-7xl mx-auto border-t border-zinc-900">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h2 class="text-xs uppercase tracking-widest font-bold text-garageCyan mb-2">01 // FILOZOFIE</h2>
+                <p class="text-2xl font-bold text-white tracking-tight">Proč zrovna my?</p>
+            </div>
+            <div class="md:col-span-2 text-gray-400 font-light leading-relaxed space-y-6 text-base md:text-lg">
+                <p>
+                    Většina klasických servisů vidí v autech jen mechaniku a spotřební díly. Když ale dojde na lámání chleba u platforem s motory jako <strong class="text-white">4G63, SR20DET nebo 13B Wankel</strong>, mechanické zkušenosti končí. Nastupuje nutnost absolutní integrity v elektrických vlnách.
+                </p>
+                <p>
+                    Nekonáme běžný servis pro obyčejná auta. Přebíráme projekty ve fázi „punku“ a přinášíme do nich chirurgickou přesnost. Čisté dráty, perfektní kostry, správné stínění senzorů a logické mapování dat.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCE: PROJEKTY (ZABEZPEČENÁ DIGITÁLNÍ MŘÍŽKA) -->
+    <section id="projekty" class="py-24 px-6 border-t border-zinc-900 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-xs uppercase tracking-widest font-bold text-garageCyan mb-2">02 // Živá mřížka</h2>
+                <h3 class="text-3xl font-bold text-white tracking-tight">Aktuální dění z dílny</h3>
+                <p class="text-zinc-500 text-sm mt-2 font-mono">[ Kliknutím na kartu přejdeš na náš Instagram ]</p>
+            </div>
+
+            <!-- Grid pro 3 hlavní JDM okruhy -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Karta 1: EVO Výběr -->
+                <a href="https://www.instagram.com/stories/highlights/18184964044349346/" target="_blank" class="group block relative overflow-hidden border border-zinc-800 bg-cardBg transition duration-300 hover:border-zinc-600">
+                    <div class="w-full h-72 overflow-hidden bg-zinc-950 relative">
+                        <img src="https://images.unsplash.com/photo-1616422285623-13ff0162193c?auto=format&fit=crop&q=80&w=800" alt="EVO III" class="w-full h-full object-cover opacity-45 group-hover:opacity-70 group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-6 border-t border-zinc-900">
+                        <span class="text-xs font-mono text-garageCyan tracking-wider uppercase">[ Instagram Highlights ]</span>
+                        <h4 class="text-xl font-bold text-white mt-1 group-hover:text-garageCyan transition">Evolution III Setup</h4>
+                        <p class="text-zinc-400 font-light text-xs mt-2 leading-relaxed">
+                            Zobrazit kompletní archiv a průběh prací na ikonické čtyřkolce s motorem 4G63.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Karta 2: Silvia S14 Post -->
+                <a href="https://www.instagram.com/p/DXUFviUjSBO/?img_index=6" target="_blank" class="group block relative overflow-hidden border border-zinc-800 bg-cardBg transition duration-300 hover:border-zinc-600">
+                    <div class="w-full h-72 overflow-hidden bg-zinc-950 relative">
+                        <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&q=80&w=800" alt="Silvia Wiring" class="w-full h-full object-cover opacity-45 group-hover:opacity-70 group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-6 border-t border-zinc-900">
+                        <span class="text-xs font-mono text-garageCyan tracking-wider uppercase">[ Instagram Post ]</span>
+                        <h4 class="text-xl font-bold text-white mt-1 group-hover:text-garageCyan transition">Silvia S14 Wiring & ECU</h4>
+                        <p class="text-zinc-400 font-light text-xs mt-2 leading-relaxed">
+                            Detailní pohled na redefinici kabelových svazků a testování standalone managementu.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Karta 3: RX-7 Výběr -->
+                <a href="https://www.instagram.com/stories/highlights/17918484599265157/" target="_blank" class="group block relative overflow-hidden border border-zinc-800 bg-cardBg transition duration-300 hover:border-zinc-600">
+                    <div class="w-full h-72 overflow-hidden bg-zinc-950 relative">
+                        <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80&w=800" alt="RX-7 Wankel" class="w-full h-full object-cover opacity-45 group-hover:opacity-70 group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-6 border-t border-zinc-900">
+                        <span class="text-xs font-mono text-garageCyan tracking-wider uppercase">[ Instagram Highlights ]</span>
+                        <h4 class="text-xl font-bold text-white mt-1 group-hover:text-garageCyan transition">RX-7 Wankel Project</h4>
+                        <p class="text-zinc-400 font-light text-xs mt-2 leading-relaxed">
+                            Sledovat specifické postupy a kalibrace senzorů u rotačních motorů 13B.
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCE: CO REÁLNĚ DĚLÁME (4 KARTY - PŘIDÁNY BODYKITY) -->
+    <section id="sluzby" class="bg-cardBg py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-xs uppercase tracking-widest font-bold text-garageCyan mb-2">03 // Naše specializace</h2>
+                <h3 class="text-3xl font-bold text-white tracking-tight">Kde odsekáváme chaos ze systémů</h3>
+            </div>
+
+            <!-- Responzivní grid: 1 sloupec na mobilu, 2 na tabletech, 4 na velkých obrazovkách -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Karta 1 -->
+                <div class="border border-zinc-800 p-6 hover:border-zinc-700 transition flex flex-col justify-between bg-black/20">
+                    <div>
+                        <div class="text-garageCyan font-mono text-xs mb-4">[ 01 ]</div>
+                        <h4 class="text-lg font-bold text-white mb-3">Custom Wiring</h4>
+                        <p class="text-zinc-400 font-light text-xs leading-relaxed">
+                            Kompletní stavba motorových i interiérových kabelových svazků od nuly. Odstranění starých modifikací, zoxidovaných spojů a sémantické vaty pod palubní deskou. Pouze čistý řád a motorsport standardy.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Karta 2 -->
+                <div class="border border-zinc-800 p-6 hover:border-zinc-700 transition flex flex-col justify-between bg-black/20">
+                    <div>
+                        <div class="text-garageCyan font-mono text-xs mb-4">[ 02 ]</div>
+                        <h4 class="text-lg font-bold text-white mb-3">Standalone ECU</h4>
+                        <p class="text-zinc-400 font-light text-xs leading-relaxed">
+                            Instalace a konfigurace programovatelných řídicích jednotek. Oživujeme motory skrze moderní digitální mozky. Správné nastavení triggerů, kalibrace senzorů a příprava na bezpečné ladění.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Karta 3 -->
+                <div class="border border-zinc-800 p-6 hover:border-zinc-700 transition flex flex-col justify-between bg-black/20">
+                    <div>
+                        <div class="text-garageCyan font-mono text-xs mb-4">[ 03 ]</div>
+                        <h4 class="text-lg font-bold text-white mb-3">Data & Diagnostika</h4>
+                        <p class="text-zinc-400 font-light text-xs leading-relaxed">
+                            Čtení logů, analýza chování motoru v reálném čase, hledání skrytých elektrických anomálií. Měříme vnitřní rozpor systému tak, jak teploměr měří teplotu. Pokud je v datech chyba, eliminujeme ji.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Karta 4: NOVINKA - BODYKITY -->
+                <div class="border border-zinc-800 p-6 hover:border-zinc-700 transition flex flex-col justify-between bg-black/20">
+                    <div>
+                        <div class="text-garageCyan font-mono text-xs mb-4">[ 04 ]</div>
+                        <h4 class="text-lg font-bold text-white mb-3">Aero & Bodykits</h4>
+                        <p class="text-zinc-400 font-light text-xs leading-relaxed">
+                            Montáž, lícování a strukturální uchycení aerodynamických prvků a custom bodykitů. Přenesení dravého vizuálního řádu na surovou karoserii s důrazem na přesnost, geometrii a čisté linie platformy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCE: KONTAKT -->
+    <section id="kontakt" class="py-24 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-xs uppercase tracking-widest font-bold text-garageCyan mb-2">04 // Spojení</h2>
+        <h3 class="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6">Máš projekt, který potřebuje mozek?</h3>
+        <p class="text-zinc-400 font-light max-w-xl mx-auto mb-12 text-sm md:text-base">
+            Dílna se nachází v Berouně. Pracujeme na bázi synergie, vzájemné důvěry a nekompromisního přístupu ke kvalitě. Pokud chceš své auto posunout z punkové fáze do absolutního stavu, ozvi se nám.
+        </p>
+        <div class="bg-cardBg border border-zinc-800 p-8 text-left">
+            <p class="text-sm text-zinc-400 mb-2 font-mono">Kontaktuj nás skrze Instagram nebo nám napiš záměr:</p>
+            <p class="text-xl font-bold text-white tracking-tight mb-4">instagram.com/rusticpower</p>
+            <p class="text-xs text-zinc-500 font-light">Webmastered by: Ladič spolujezdec</p>
+        </div>
+    </section>
+
+</body>
+</html>
