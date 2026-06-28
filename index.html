@@ -20,15 +20,6 @@
             }
         }
     </script>
-    <style>
-        /* Začištění a stylování Instagram iframe oken pro industriální design */
-        .ig-container iframe {
-            width: 100% !important;
-            min-height: 500px;
-            border: 1px solid #27272a !important;
-            background: #141414 !important;
-        }
-    </style>
 </head>
 <body class="bg-darkBg text-gray-100 font-sans selection:bg-garageCyan selection:text-white">
 
@@ -50,7 +41,7 @@
         <!-- Hlavní sdělení -->
         <div class="w-full max-w-7xl mx-auto my-auto py-12">
             <h1 class="text-4xl md:text-7xl font-extrabold tracking-tighter text-white max-w-4xl leading-none mb-6">
-                DÁVÁME STARÉ HMOTE <br class="hidden md:inline">NOVÉ SRDCE.
+                DÁVÁME STARÉ HMOTĚ <br class="hidden md:inline">NOVÉ SRDCE.
             </h1>
             <p class="text-gray-400 text-lg md:text-xl max-w-2xl font-light leading-relaxed mb-8">
                 Stavba custom kabelových svazků, odstraňování chaosu v elektroinstalaci a pokročilé ladění standalone řídicích jednotek.
@@ -84,44 +75,40 @@
                     Většina klasických servisů vidí v autech jen mechaniku a spotřební díly. Když ale dojde na lámání chleba u platforem s motory jako <strong class="text-white">4G63, SR20DET nebo 13B Wankel</strong>, mechanické zkušenosti končí. Nastupuje nutnost absolutní integrity v elektrických vlnách.
                 </p>
                 <p>
-                    Nekonáme běžný servis pro obyčejná auta. Přebíráme projekty ve fázi „punku“ a přinášíme do nich chirurgickou přesnost. Čisté dráty, perfektní kostry, správné stínění senzorů a logické mapování dat.
+                    Nekonáme běžný servis pro obyčejná auta. Přebíráme projekty ve fázi „punku“ a přinášíme do nich chirurgickou přesnost. Čisté dráty, perfektní kostrs, správné stínění senzorů a logické mapování dat.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- SEKCE: PROJEKTY (ŽIVÝ, INTEGRÁLNÍ FEED) -->
+    <!-- SEKCE: PROJEKTY (PLNĚ AUTOMATICKÝ INSTAGRAM SLIDER / WIDGET) -->
     <section id="projekty" class="py-24 px-6 border-t border-zinc-900 bg-black">
         <div class="max-w-7xl mx-auto">
             <div class="mb-12">
                 <h2 class="text-xs uppercase tracking-widest font-bold text-garageCyan mb-2">02 // Živá mřížka</h2>
                 <h3 class="text-3xl font-bold text-white tracking-tight">Aktuální dění z dílny</h3>
-                <p class="text-zinc-500 text-sm mt-2 font-mono">[ Reálný obsah generovaný přímo z vašeho Instagramu ]</p>
+                <p class="text-zinc-500 text-sm mt-2 font-mono">[ Živé, posuvné portfolio načítané automaticky přímo z profilu @rusticpower ]</p>
             </div>
 
-            <!-- Třísloupcový grid pro přímé vykreslení postů a highlights -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start ig-container">
+            <!-- MÍSTO PRO TVŮJ AUTOMATICKÝ WIDGET -->
+            <div class="w-full bg-cardBg border border-zinc-800/80 p-4 md:p-8">
                 
-                <!-- Karta 1: EVO Setup (Highlights link) -->
-                <div class="w-full bg-cardBg border border-zinc-800 p-2">
-                    <iframe src="https://www.instagram.com/stories/highlights/18184964044349346/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                </div>
-
-                <!-- Karta 2: Silvia S14 (Reálný Post z tvého zdrojáku) -->
-                <div class="w-full bg-cardBg border border-zinc-800 p-2">
-                    <iframe src="https://www.instagram.com/p/DXUFviUjSBO/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                </div>
-
-                <!-- Karta 3: RX-7 Setup (Highlights link) -->
-                <div class="w-full bg-cardBg border border-zinc-800 p-2">
-                    <iframe src="https://www.instagram.com/stories/highlights/17918484599265157/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                </div>
-
+                <!-- 
+                  Tento div níže načte widget. Vybral jsem Behold.so, protože je zdarma, 
+                  má čistý kód, je super rychlý a perfektně zapadne do tmavého designu.
+                -->
+                <div data-behold-id="Vložíš Svoje ID"></div>
+                <script src="https://w.behold.so/widget.js" type="module"></script>
+                
+                <!-- Bezpečný záložní text, pokud se widget poprvé generuje -->
+                <p class="text-xs font-mono text-zinc-600 text-center mt-4">
+                    Pro zobrazení slideru stačí spárovat profil na Behold.so.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- SEKCE: CO REÁLNĚ DĚLÁME (4 KARTY VČETNComposite BODYKITŮ) -->
+    <!-- SEKCE: CO REÁLNĚ DĚLÁME (4 KARTY) -->
     <section id="sluzby" class="bg-cardBg py-24 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="mb-16">
