@@ -20,6 +20,15 @@
             }
         }
     </script>
+    <style>
+        /* Začištění a stylování Instagram iframe oken pro industriální design */
+        .ig-container iframe {
+            width: 100% !important;
+            min-height: 500px;
+            border: 1px solid #27272a !important;
+            background: #141414 !important;
+        }
+    </style>
 </head>
 <body class="bg-darkBg text-gray-100 font-sans selection:bg-garageCyan selection:text-white">
 
@@ -41,7 +50,7 @@
         <!-- Hlavní sdělení -->
         <div class="w-full max-w-7xl mx-auto my-auto py-12">
             <h1 class="text-4xl md:text-7xl font-extrabold tracking-tighter text-white max-w-4xl leading-none mb-6">
-                DÁVÁME STARÉ HMOTĚ <br class="hidden md:inline">NOVÉ SRDCE.
+                DÁVÁME STARÉ HMOTE <br class="hidden md:inline">NOVÉ SRDCE.
             </h1>
             <p class="text-gray-400 text-lg md:text-xl max-w-2xl font-light leading-relaxed mb-8">
                 Stavba custom kabelových svazků, odstraňování chaosu v elektroinstalaci a pokročilé ladění standalone řídicích jednotek.
@@ -81,68 +90,38 @@
         </div>
     </section>
 
-    <!-- SEKCE: PROJEKTY (ZABEZPEČENÁ DIGITÁLNÍ MŘÍŽKA) -->
+    <!-- SEKCE: PROJEKTY (ŽIVÝ, INTEGRÁLNÍ FEED) -->
     <section id="projekty" class="py-24 px-6 border-t border-zinc-900 bg-black">
         <div class="max-w-7xl mx-auto">
             <div class="mb-12">
                 <h2 class="text-xs uppercase tracking-widest font-bold text-garageCyan mb-2">02 // Živá mřížka</h2>
                 <h3 class="text-3xl font-bold text-white tracking-tight">Aktuální dění z dílny</h3>
-                <p class="text-zinc-500 text-sm mt-2 font-mono">[ Kliknutím na kartu přejdeš na náš Instagram ]</p>
+                <p class="text-zinc-500 text-sm mt-2 font-mono">[ Reálný obsah generovaný přímo z vašeho Instagramu ]</p>
             </div>
 
-            <!-- Grid pro 3 hlavní JDM okruhy -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Třísloupcový grid pro přímé vykreslení postů a highlights -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start ig-container">
                 
-                <!-- Karta 1: EVO Výběr -->
-                <a href="https://www.instagram.com/stories/highlights/18184964044349346/" target="_blank" class="group block relative overflow-hidden border border-zinc-800 bg-cardBg transition duration-300 hover:border-zinc-600">
-                    <div class="w-full h-72 overflow-hidden bg-zinc-950 relative">
-                        <img src="https://images.unsplash.com/photo-1616422285623-13ff0162193c?auto=format&fit=crop&q=80&w=800" alt="EVO III" class="w-full h-full object-cover opacity-45 group-hover:opacity-70 group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent"></div>
-                    </div>
-                    <div class="p-6 border-t border-zinc-900">
-                        <span class="text-xs font-mono text-garageCyan tracking-wider uppercase">[ Instagram Highlights ]</span>
-                        <h4 class="text-xl font-bold text-white mt-1 group-hover:text-garageCyan transition">Evolution III Setup</h4>
-                        <p class="text-zinc-400 font-light text-xs mt-2 leading-relaxed">
-                            Zobrazit kompletní archiv a průběh prací na ikonické čtyřkolce s motorem 4G63.
-                        </p>
-                    </div>
-                </a>
+                <!-- Karta 1: EVO Setup (Highlights link) -->
+                <div class="w-full bg-cardBg border border-zinc-800 p-2">
+                    <iframe src="https://www.instagram.com/stories/highlights/18184964044349346/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                </div>
 
-                <!-- Karta 2: Silvia S14 Post -->
-                <a href="https://www.instagram.com/p/DXUFviUjSBO/?img_index=6" target="_blank" class="group block relative overflow-hidden border border-zinc-800 bg-cardBg transition duration-300 hover:border-zinc-600">
-                    <div class="w-full h-72 overflow-hidden bg-zinc-950 relative">
-                        <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&q=80&w=800" alt="Silvia Wiring" class="w-full h-full object-cover opacity-45 group-hover:opacity-70 group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent"></div>
-                    </div>
-                    <div class="p-6 border-t border-zinc-900">
-                        <span class="text-xs font-mono text-garageCyan tracking-wider uppercase">[ Instagram Post ]</span>
-                        <h4 class="text-xl font-bold text-white mt-1 group-hover:text-garageCyan transition">Silvia S14 Wiring & ECU</h4>
-                        <p class="text-zinc-400 font-light text-xs mt-2 leading-relaxed">
-                            Detailní pohled na redefinici kabelových svazků a testování standalone managementu.
-                        </p>
-                    </div>
-                </a>
+                <!-- Karta 2: Silvia S14 (Reálný Post z tvého zdrojáku) -->
+                <div class="w-full bg-cardBg border border-zinc-800 p-2">
+                    <iframe src="https://www.instagram.com/p/DXUFviUjSBO/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                </div>
 
-                <!-- Karta 3: RX-7 Výběr -->
-                <a href="https://www.instagram.com/stories/highlights/17918484599265157/" target="_blank" class="group block relative overflow-hidden border border-zinc-800 bg-cardBg transition duration-300 hover:border-zinc-600">
-                    <div class="w-full h-72 overflow-hidden bg-zinc-950 relative">
-                        <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80&w=800" alt="RX-7 Wankel" class="w-full h-full object-cover opacity-45 group-hover:opacity-70 group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-cardBg via-transparent to-transparent"></div>
-                    </div>
-                    <div class="p-6 border-t border-zinc-900">
-                        <span class="text-xs font-mono text-garageCyan tracking-wider uppercase">[ Instagram Highlights ]</span>
-                        <h4 class="text-xl font-bold text-white mt-1 group-hover:text-garageCyan transition">RX-7 Wankel Project</h4>
-                        <p class="text-zinc-400 font-light text-xs mt-2 leading-relaxed">
-                            Sledovat specifické postupy a kalibrace senzorů u rotačních motorů 13B.
-                        </p>
-                    </div>
-                </a>
+                <!-- Karta 3: RX-7 Setup (Highlights link) -->
+                <div class="w-full bg-cardBg border border-zinc-800 p-2">
+                    <iframe src="https://www.instagram.com/stories/highlights/17918484599265157/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                </div>
 
             </div>
         </div>
     </section>
 
-    <!-- SEKCE: CO REÁLNĚ DĚLÁME (4 KARTY - PŘIDÁNY BODYKITY) -->
+    <!-- SEKCE: CO REÁLNĚ DĚLÁME (4 KARTY VČETNComposite BODYKITŮ) -->
     <section id="sluzby" class="bg-cardBg py-24 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="mb-16">
@@ -150,7 +129,6 @@
                 <h3 class="text-3xl font-bold text-white tracking-tight">Kde odsekáváme chaos ze systémů</h3>
             </div>
 
-            <!-- Responzivní grid: 1 sloupec na mobilu, 2 na tabletech, 4 na velkých obrazovkách -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Karta 1 -->
                 <div class="border border-zinc-800 p-6 hover:border-zinc-700 transition flex flex-col justify-between bg-black/20">
@@ -185,7 +163,7 @@
                     </div>
                 </div>
 
-                <!-- Karta 4: NOVINKA - BODYKITY -->
+                <!-- Karta 4: Aero & Bodykits -->
                 <div class="border border-zinc-800 p-6 hover:border-zinc-700 transition flex flex-col justify-between bg-black/20">
                     <div>
                         <div class="text-garageCyan font-mono text-xs mb-4">[ 04 ]</div>
